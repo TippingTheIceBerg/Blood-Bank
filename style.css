@@ -15,23 +15,46 @@
 }
 html,body{
     height: 100%;
+    width: 100%;
+    color: var(--main-color);
 }
+
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: var(--main-color);
-
+    text-align: center;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mainAbout__container{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width:600px;
+    padding: 200px;
     gap: 20px;
+
 }
+.nav__list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+}
+.nav__item{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+
+}
+.nav__item a{
+    text-decoration: none;
+}
+
+
 .about__header{
     font-size: 2.5em;
 }
