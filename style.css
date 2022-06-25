@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+
+  
+}
+
+:root{
+    --main-color: #820000;
+    --accent-color:#006800;
+    --white:#eee;
+
+}
