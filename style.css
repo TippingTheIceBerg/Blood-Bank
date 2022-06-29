@@ -47,6 +47,7 @@ header{
     background-color: var(--card-white) ;
     border-radius: 10px 60px;
     max-width: 100%;
+    box-shadow: 3px 3px black;
 }
 .main__containerSections > p{
     font-size: 1.2em;
