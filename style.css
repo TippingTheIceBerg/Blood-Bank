@@ -2,21 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--white);
-
-  
 }
 
 :root{
-    --main-color: #690404;
+    --main-color: #820000;
     --accent-color:#006800;
-    --white:#eee;
+    --white:hsl(0, 0%, 73%);
+    --card-white: hsl(0, 0%, 90%);
 
 }
 html,body{
     height: 100%;
     width: 100%;
     color: var(--main-color);
+    background-color: var(--white);
 }
 
 
@@ -24,6 +23,9 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    background-color: var(--card-white);
+    width:100%;
+    padding: 10px;
 }
 
 .main__container{
@@ -37,19 +39,23 @@ header{
     width: 100%;
 }
 .main__containerSections{
-    margin-top:100px;
-    padding: 20px;
+    padding: 50px;
     line-height: 1.5;
+    width: 800px;
+    margin: 100px auto auto;
+    background-color: var(--card-white) ;
+    border-radius: 5%;
 }
 .main__containerSections > p{
     font-size: 1.2em;
+    color: black;
 }
 .main__containerSections > h1{
     text-align: center;
 }
 .nav__list{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;  
 }
 .nav__item{
@@ -60,7 +66,8 @@ header{
 }
 .nav__item a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.6em;
+    
 }
 
 
