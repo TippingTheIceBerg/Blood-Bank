@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 :root{
@@ -17,8 +18,7 @@ html,body{
     color: var(--main-color);
     background-color: var(--white);
 }
-
-
+/* NAV */
 header{
     position: absolute;
     top: 0;
@@ -26,8 +26,52 @@ header{
     background-color: var(--card-white);
     width:100%;
     padding: 10px;
+
+}
+.nav__list{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;  
+}
+.nav__item{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+
+}
+.nav__itemSection{
+    position: relative;
+}
+.section__list{
+    position: absolute;
+    opacity: 0;
+    background-color: var(--card-white);
+    padding: 20px;
+    border:rgb(128 0 0/.4) solid;
+    transition: opacity linear .1s;
+}
+.section__item {
+   list-style-type: none;
+   padding: 10px;
+   transition: background-color .2s linear;
+}
+.section__item:hover{
+    background-color: white;
 }
 
+.nav__itemSection:hover .section__list{
+    opacity: 1;
+}
+
+.nav__item a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: var(--accent-color);
+}
+
+
+
+/* Index */
 .main__container{
     display: flex;
     justify-content: center;
@@ -38,7 +82,34 @@ header{
     height: 100%;
     width: 100%;
     text-align: center;
+    background-color: white;
 }
+.home__linksContainer{
+    margin-top: 10px;
+
+}
+.home__links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.home__item {
+    list-style-type: none;
+}
+.home__link{
+
+    color:var(--accent-color);
+    font-size: 1.5em;
+    padding: 12px;
+    font-weight: 800;
+    background-color: var(--card-white);
+    border-radius: 20px;
+}
+
+
+/* Testing and Procedures */
 .main__containerSections{
     padding: 50px;
     line-height: 1.5;
@@ -56,25 +127,10 @@ header{
 .main__containerSections > h1{
     text-align: center;
 }
-.nav__list{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;  
-}
-.nav__item{
-    margin:0;
-    padding:0;
-    list-style-type: none;
-
-}
-.nav__item a{
-    text-decoration: none;
-    font-size: 1.6em;
-    
-}
 
 
-.about__header{
+/* About */
+.about__h1{
     font-size: 2.5em;
 }
 
